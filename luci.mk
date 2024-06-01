@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2008-2015 The LuCI Team <luci@lists.subsignal.org>
+# Copyright (C) 2018 DingYi <dingyi139@gmail.com>
 #
 # This is free software, licensed under the Apache License, Version 2.0 .
 #
@@ -12,40 +12,14 @@ LUCI_DEFAULTS:=$(notdir $(wildcard ${CURDIR}/root/etc/uci-defaults/*))
 LUCI_PKGARCH?=$(if $(realpath src/Makefile),,all)
 
 # Language code titles
-LUCI_LANG.ca=Català (Catalan)
-LUCI_LANG.cs=Čeština (Czech)
-LUCI_LANG.de=Deutsch (German)
-LUCI_LANG.el=Ελληνικά (Greek)
-LUCI_LANG.en=English
-LUCI_LANG.es=Español (Spanish)
-LUCI_LANG.fr=Français (French)
-LUCI_LANG.he=עִבְרִית (Hebrew)
-LUCI_LANG.hu=Magyar (Hungarian)
-LUCI_LANG.it=Italiano (Italian)
-LUCI_LANG.ja=日本語 (Japanese)
-LUCI_LANG.ko=한국어 (Korean)
-LUCI_LANG.ms=Bahasa Melayu (Malay)
-LUCI_LANG.no=Norsk (Norwegian)
-LUCI_LANG.pl=Polski (Polish)
-LUCI_LANG.pt-br=Português do Brasil (Brazialian Portuguese)
-LUCI_LANG.pt=Português (Portuguese)
-LUCI_LANG.ro=Română (Romanian)
-LUCI_LANG.ru=Русский (Russian)
-LUCI_LANG.sk=Slovenčina (Slovak)
-LUCI_LANG.sv=Svenska (Swedish)
-LUCI_LANG.tr=Türkçe (Turkish)
-LUCI_LANG.uk=Українська (Ukrainian)
-LUCI_LANG.vi=Tiếng Việt (Vietnamese)
 LUCI_LANG.zh-cn=中文 (Chinese)
-LUCI_LANG.zh-tw=臺灣華語 (Taiwanese)
 
 # Submenu titles
-LUCI_MENU.col=1. Collections
-LUCI_MENU.mod=2. Modules
-LUCI_MENU.app=3. Applications
-LUCI_MENU.theme=4. Themes
-LUCI_MENU.proto=5. Protocols
-LUCI_MENU.lib=6. Libraries
+LUCI_MENU.mod=1. Modules
+LUCI_MENU.app=2. Applications
+LUCI_MENU.theme=3. Themes
+LUCI_MENU.proto=4. Protocols
+LUCI_MENU.lib=5. Libraries
 
 
 PKG_NAME?=$(LUCI_NAME)
