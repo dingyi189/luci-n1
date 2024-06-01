@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2008-2015 The LuCI Team <luci@lists.subsignal.org>
+# Copyright (C) 2018 DingYi <dingyi139@gmail.com>
 #
 # This is free software, licensed under the Apache License, Version 2.0 .
 #
@@ -12,7 +12,7 @@ LUCI_TYPE:=mod
 LUCI_BASENAME:=base
 
 LUCI_TITLE:=LuCI core libraries
-LUCI_DEPENDS:=+lua +luci-lib-nixio +luci-lib-ip +rpcd +libubus-lua +luci-lib-jsonc +liblucihttp-lua
+LUCI_DEPENDS:=+lua +luci-lib-nixio +luci-lib-ip +rpcd +libubus-lua +luci-lib-jsonc +liblucihttp-lua +@LUCI_LANG_zh-cn
 
 
 PKG_SOURCE:=v1.0.0.tar.gz
