@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2016 Dan Luedtke <mail@danrl.com>
+# Copyright (C) 2018 DingYi <dingyi139@gmail.com>
 #
 # This is free software, licensed under the Apache License, Version 2.0 .
 #
@@ -10,7 +10,7 @@ LUCI_TITLE:=Support for WireGuard VPN
 LUCI_DEPENDS:=+kmod-wireguard +wireguard-tools
 LUCI_PKGARCH:=all
 
-PKG_MAINTAINER:=Dan Luedtke <mail@danrl.com>
+PKG_MAINTAINER:=DingYi <dingyi139@gmail.com>
 
 include ../../luci.mk
 
