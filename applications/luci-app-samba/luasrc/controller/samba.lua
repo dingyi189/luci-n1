@@ -10,6 +10,6 @@ function index()
 
 	local page
 
-	page = entry({"admin", "services", "samba"}, cbi("samba"), _("Network Shares"), 25)
+	page = entry({"admin", "services", "samba"}, cbi("samba"), _("Network Shares"), 28)
 	page.dependent = true
 end
