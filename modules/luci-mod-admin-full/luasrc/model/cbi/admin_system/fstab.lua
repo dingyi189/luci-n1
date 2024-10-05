@@ -34,37 +34,6 @@ until not ln
 block:close()
 
 m = Map("fstab", translate("Mount Points"))
-s = m:section(TypedSection, "global", translate("Global Settings"))
-s.addremove = false
-s.anonymous = true
-
-detect = s:option(Button, "block_detect", translate("Generate Config"))
-detect.inputstyle = "reload"
-
-detect.write = function(self, section)
-	luci.sys.call("block detect >/etc/config/fstab")
-	luci.http.redirect(luci.dispatcher.build_url("admin/system", "fstab"))
-end
-
-o = s:option(Flag, "anon_swap", translate("Anonymous Swap"))
-o.default = o.disabled
-o.rmempty = false
-
-o = s:option(Flag, "anon_mount", translate("Anonymous Mount"))
-o.default = o.disabled
-o.rmempty = false
-
-o = s:option(Flag, "auto_swap", translate("Automount Swap"))
-o.default = o.enabled
-o.rmempty = false
-
-o = s:option(Flag, "auto_mount", translate("Automount Filesystem"))
-o.default = o.enabled
-o.rmempty = false
-
-o = s:option(Flag, "check_fs", translate("Check filesystems before mount"))
-o.default = o.disabled
-o.rmempty = false
 
 local mounts = luci.sys.mounts()
 local non_system_mounts = {}
