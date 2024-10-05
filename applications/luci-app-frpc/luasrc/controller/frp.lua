@@ -5,7 +5,7 @@ function index()
 		return
 	end
 
-	entry({"admin", "services", "frp"}, cbi("frp/basic"), _("Frp Setting"), 29).dependent = true
+	entry({"admin", "services", "frp"}, cbi("frp/basic"), _("Frp Setting"), 22).dependent = true
 	entry({"admin", "services", "frp", "config"}, cbi("frp/config")).leaf = true
 	entry({"admin", "services", "frp", "status"}, call("act_status")).leaf = true
 end
