@@ -6,7 +6,7 @@ SERVICE_DAEMONIZE=1
 
 start() {
 	logger -t TTYD 'Starting ttyd service'
-	service_start /usr/bin/ttyd -i br-lan /bin/login -f root
+	service_start /usr/bin/ttyd -i eth0 /bin/login -f root
 	return 0
 }
 
