@@ -9,14 +9,6 @@ function index()
 		arcombine(cbi("firewall/zones"), cbi("firewall/zone-details")),
 		_("General Settings"), 10).leaf = true
 
-	entry({"admin", "network", "firewall", "forwards"},
-		arcombine(cbi("firewall/forwards"), cbi("firewall/forward-details")),
-		_("Port Forwards"), 20).leaf = true
-
-	entry({"admin", "network", "firewall", "rules"},
-		arcombine(cbi("firewall/rules"), cbi("firewall/rule-details")),
-		_("Traffic Rules"), 30).leaf = true
-
 	entry({"admin", "network", "firewall", "custom"},
 		form("firewall/custom"),
 		_("Custom Rules"), 40).leaf = true
