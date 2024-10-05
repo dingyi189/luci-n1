@@ -77,7 +77,7 @@ e.rmempty = false
 e:depends("protocol", "tcp")
 
 e = t:taboption("other", Value, "http_proxy", translate("HTTP PROXY"))
-e.placeholder = "http://user:pwd@192.168.8.88:8080"
+e.placeholder = "http://user:pwd@192.168.50.50:8080"
 e:depends("enable_http_proxy", 1)
 e.optional = false
 
