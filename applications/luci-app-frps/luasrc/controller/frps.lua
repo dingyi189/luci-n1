@@ -8,7 +8,7 @@ function index()
 		return
 	end
 
-	entry({"admin", "services", "frps"}, alias("admin", "services", "frps", "common"), _("Frp Server"), 31).dependent = true
+	entry({"admin", "services", "frps"}, alias("admin", "services", "frps", "common"), _("Frp Server"), 24).dependent = true
 	entry({"admin", "services", "frps", "common"}, cbi("frps/common"), _("Settings"), 1).leaf = true
 	entry({"admin", "services", "frps", "server"}, cbi("frps/server"), _("Server"), 2).leaf = true
 	entry({"admin", "services", "frps", "status"}, call("action_status")).leaf = true
